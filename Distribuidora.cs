@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 namespace EspacioDistribuidora;
 
     public class Tarea{
@@ -10,4 +12,8 @@ namespace EspacioDistribuidora;
             Descripcion = descripcion;
             Duracion = duracion;
         }
-    }
+
+        public int IdTarea{ get => TareaID; set => TareaID = value;}
+        public string descripcion{get => Descripcion; set => Descripcion = value;}
+        public int duracion{get => Duracion; set => Duracion = value;}
+    }   
