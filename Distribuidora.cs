@@ -16,4 +16,14 @@ namespace EspacioDistribuidora;
         public int IdTarea{ get => TareaID; set => TareaID = value;}
         public string descripcion{get => Descripcion; set => Descripcion = value;}
         public int duracion{get => Duracion; set => Duracion = value;}
+
+        static public void MostrarTarea(List<Tarea> tareas){
+            foreach (Tarea tarea in tareas)
+            {
+                Console.WriteLine("\n--Tarea--");
+                Console.WriteLine($"\nId: {tarea.TareaID}");
+                Console.WriteLine($"\nDescripcion: {tarea.Descripcion}");
+                Console.WriteLine($"\nDuracion: {tarea.Duracion}");
+            }
+        }
     }   
